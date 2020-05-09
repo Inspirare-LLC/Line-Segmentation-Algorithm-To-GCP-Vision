@@ -30,3 +30,4 @@ Any contributions are welcome in the form of a Pull Request
 - Make the project into a nuget package
 - Improve and refactor algorithm with C# syntax to perform better
 - Fix bugs
+- Add CI
