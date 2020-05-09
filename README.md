@@ -19,6 +19,12 @@ This will return an `IEnumerable<string>` with lines of connected text.
 ## More info
 For more information about the algorithm itself please visit [Original repository](https://github.com/sshniro/line-segmentation-algorithm-to-gcp-vision) 
 
+## Issues
+File issues in the `Issue` section
+
+## Contributions
+Any contributions are welcome in the form of a Pull Request
+
 ## Future Work
 - Maintain the port
 - Make the project into a nuget package
