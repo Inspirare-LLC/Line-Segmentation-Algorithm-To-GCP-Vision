@@ -9,6 +9,8 @@ using LineSegmentationAlgorithmToGCPVision;
 var result = client.Annotate(annotateImageRequest);
 ````
 Where `client` is `ImageAnnotatorClient` and `annotateImageRequest` is `AnnotateImageRequest`
+Remember to include a `Feature.Types.Type.DocumentTextDetection` feature in the `AnnotateImageRequest`.
+
 After that use this library to process the result as such:
 
 ````
