@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Jonas Petraška</Authors>
+    <Company>Inspirare, LLC</Company>
+    <PackageProjectUrl>https://inspirare.lt</PackageProjectUrl>
+    <Description>Line segmentation algorithm for Google Vision API.</Description>
+    <RepositoryUrl>https://github.com/Inspirare-LLC/Line-Segmentation-Algorithm-To-GCP-Vision</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageReleaseNotes>Line segmentation algorithm for Google Vision API.</PackageReleaseNotes>
+    <PackageId>Inspirare.Google.Vision.API.LineSegmentation</PackageId>
+    <Product>Inspirare.Google.Vision.API.LineSegmentation</Product>
   </PropertyGroup>
 
   <ItemGroup>

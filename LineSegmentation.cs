@@ -111,23 +111,26 @@ namespace LineSegmentationAlgorithmToGCPVision
 
                     var index = l.IndexOf(w);
 
-                    // check if the word is inside
-                    l = l.Substring(index + w.Length);
-                    if (status)
+                    if (index >= 0)
                     {
-                        status = false;
-                        // set starting coordinates
-                        mergedElement = wElement;
-                    }
+                        // check if the word is inside
+                        l = l.Substring(index + w.Length);
+                        if (status)
+                        {
+                            status = false;
+                            // set starting coordinates
+                            mergedElement = wElement;
+                        }
 
-                    if (String.IsNullOrEmpty(l))
-                    {
-                        // set ending coordinates
-                        mergedElement.Description = ll;
-                        mergedElement.BoundingPoly.Vertices[1] = wElement.BoundingPoly.Vertices[1];
-                        mergedElement.BoundingPoly.Vertices[2] = wElement.BoundingPoly.Vertices[2];
-                        mergedArray.Add(mergedElement);
-                        break;
+                        if (String.IsNullOrEmpty(l))
+                        {
+                            // set ending coordinates
+                            mergedElement.Description = ll;
+                            mergedElement.BoundingPoly.Vertices[1] = wElement.BoundingPoly.Vertices[1];
+                            mergedElement.BoundingPoly.Vertices[2] = wElement.BoundingPoly.Vertices[2];
+                            mergedArray.Add(mergedElement);
+                            break;
+                        }
                     }
                 }
             }
